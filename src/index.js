@@ -9,7 +9,6 @@ import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
 import App from './App';
 
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
