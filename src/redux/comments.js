@@ -3,16 +3,20 @@
 //this means we need to import from the ActionTypes module, and we will use "wildcard" syntax
 
 
-import { COMMENTS } from '../shared/comments';
 import * as ActionTypes from './ActionTypes';
 
-export const Comments = (state = COMMENTS, action) => {
+export const Comments = (state = { errMess: null, comments: []}, action) => {
     switch (action.type) {
+        case ActionTypes.ADD_COMMENTS:
+            return {...state, errMess: null, comments: action.payload};
+
+        case ActionTypes.COMMENTS_FAILED:
+            return {...state, errMess: action.payload};
+
         case ActionTypes.ADD_COMMENT:
             const comment = action.payload;
-            comment.id = state.length;
-            comment.date = new Date().toISOString();
-            return state.concat(comment); // We are taking existing state, an array of objects, and then concatinating Comments object to the end of an array and then it returns that new state to the redux store, next we will update several react componenets to enable dispatching this action
+            return {...state, comments: state.comments.concat(comment)};
+
         default:
             return state;
     }
