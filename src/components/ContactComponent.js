@@ -1,14 +1,22 @@
-import React, {Component} from 'react';
+import React, {Component } from 'react';
 import { Breadcrumb, BreadcrumbItem,
     Button, Label, Col, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, Form, Errors } from 'react-redux-form';
+
+
+
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
 const isNumber = val => !isNaN(+val);
 const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+
+
+
+
+
 
 class Contact extends Component {
 
@@ -35,8 +43,7 @@ class Contact extends Component {
     }
 
     handleSubmit(values) {
-        console.log('Current State is: ' + JSON.stringify(values));
-        alert('Current State is: ' + JSON.stringify(values));
+        this.props.postFeedback(values);
         this.props.resetFeedbackForm();
     }
 
@@ -56,6 +63,7 @@ class Contact extends Component {
                 </div>
 
                 <div className="row row-content align-items-center">
+
                     <div className="col-sm-4">
                         <h5>Our Address</h5>
                         <address>
@@ -64,19 +72,21 @@ class Contact extends Component {
                             U.S.A.
                         </address>
                     </div>
+
                     <div className="col">
                         <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-555-1234</a><br />
                         <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o" /> campsites@nucamp.co</a>
                     </div>
+                    
+                   
                 </div>
-
 
                 <div className="row row-content">
                     <div className="col-12">
                         <h2>Send us your Feedback</h2>
                         <hr />
                     </div>
-
+                <div className="col-md-10">
                     <Form model="feedbackForm" onSubmit={values => this.handleSubmit(values)}>   
                             <Row className="form-group">
                                 <Label htmlFor="firstName" md={2}>First Name</Label>
@@ -219,12 +229,16 @@ class Contact extends Component {
                             </Row>
                         </Form>
 
-                        
+                    </div>  
                 </div>
             </div>
         );
     }
 }
+
+
+
+
 
 export default Contact;
 

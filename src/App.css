@@ -45,3 +45,39 @@ h2 {
 .navbar-dark {
     background-color: #901CAD;
 }
+
+.page-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: 300ms ease-out;
+}
+
+.page-exit { 
+    opacity: 1;
+}
+
+.page-exit-active {
+    opacity: 0;
+    transition: 300ms ease-in;
+}
+
+
+.my-node-enter {
+    opacity: 0;
+  }
+  .my-node-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  .my-node-exit {
+    opacity: 1;
+  }
+  .my-node-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }

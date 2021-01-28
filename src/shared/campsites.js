@@ -30,5 +30,13 @@ export const CAMPSITES = [
         elevation: 42,
         featured: true,
         description: "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
+    },
+    {
+        id: 4,
+        name:"Son-Kul National Preserve",
+        image: "/assets/images/son-kul.jpg",
+        elevation: 9895,
+        featured: true,
+        description: "An alpine lake in northern Naryn Province, Kyrgyzstan."
     }
 ];
