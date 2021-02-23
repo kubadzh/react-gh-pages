@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.909fb8be.chunk.css",
+    "main.js": "/react-gh-pages/static/js/main.9e8f0d54.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.9e8f0d54.chunk.js.map",
+    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.fd83cc0d.js",
+    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.fd83cc0d.js.map",
+    "static/css/2.6ba7b11b.chunk.css": "/react-gh-pages/static/css/2.6ba7b11b.chunk.css",
+    "static/js/2.bfce4dc7.chunk.js": "/react-gh-pages/static/js/2.bfce4dc7.chunk.js",
+    "static/js/2.bfce4dc7.chunk.js.map": "/react-gh-pages/static/js/2.bfce4dc7.chunk.js.map",
+    "static/js/3.f2e969e6.chunk.js": "/react-gh-pages/static/js/3.f2e969e6.chunk.js",
+    "static/js/3.f2e969e6.chunk.js.map": "/react-gh-pages/static/js/3.f2e969e6.chunk.js.map",
+    "index.html": "/react-gh-pages/index.html",
+    "static/css/2.6ba7b11b.chunk.css.map": "/react-gh-pages/static/css/2.6ba7b11b.chunk.css.map",
+    "static/css/main.909fb8be.chunk.css.map": "/react-gh-pages/static/css/main.909fb8be.chunk.css.map",
+    "static/js/2.bfce4dc7.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.bfce4dc7.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.css": "/react-gh-pages/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/index.css": "/react-gh-pages/static/media/open-sans-latin-800italic.b5bc2661.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd83cc0d.js",
+    "static/css/2.6ba7b11b.chunk.css",
+    "static/js/2.bfce4dc7.chunk.js",
+    "static/css/main.909fb8be.chunk.css",
+    "static/js/main.9e8f0d54.chunk.js"
+  ]
+}
